@@ -14,8 +14,8 @@ def test1():
  
 @app.route('/test2')
 def test2():
-    link = 'https://music.youtube.com/watch?v=SW2uyfNqHg4'
-    with yt_dlp.YoutubeDL({'extract_audio': True, 'format': 'bestaudio'}) as video:
+    link = 'https://music.youtube.com/watch?v=vW1sjedQHjk'
+    with yt_dlp.YoutubeDL({'extract_audio': True, 'format':'all[acodec!=none]'}) as video:
         info_dict = video.extract_info(link, download = False)
         video_title = info_dict['url']
         return video_title
