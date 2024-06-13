@@ -6,3 +6,4 @@ Jinja2
 MarkupSafe
 Werkzeug==2.2.2
 requests
+yt-dlp
